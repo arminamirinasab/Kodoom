@@ -8,6 +8,7 @@
 body {
   display: flex;
   height: 100vh;
+  overflow: hidden;
 }
 /* Basic Styles For Buttons */
 #btnWhite,
