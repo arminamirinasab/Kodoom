@@ -1,34 +1,45 @@
+/* Basic Styles */
 * {
   padding: 0;
   margin: 0;
   border: none;
   font-family: Estedad, sans-serif;
-}
-
-body {
+} body {
   display: flex;
   height: 100vh;
 }
-
-#btnWhite, #btnDark {
+/* Basic Styles For Buttons */
+#btnWhite,
+#btnDark {
   width: 50%;
   height: 100%;
+  transition: 0.3s all;
   font-size: 40px;
   font-weight: bolder;
-  transition: all 0.3s;
 }
-
-#btnWhite:hover, #btnDark:hover {
-  cursor: pointer;
-  font-size: 50px;
-}
-
+/* Custom Styles For Buttons */
 #btnWhite {
   background-color: white;
   color: #222;
 }
-
 #btnDark {
   background-color: #222;
   color: white;
+}
+/* Button Title Styles */
+#btnWhite > h2,
+#btnDark > h2 {
+  margin-top: 40px;
+}
+/* Button Percentage Styles */
+#btnWhite > span,
+#btnDark > span {
+  transition: none;
+  display: inline-block;
+}
+/* Buttons Hover Effect */
+.active#btnWhite:hover,
+.active#btnDark:hover {
+  cursor: pointer;
+  font-size: 50px;
 }
