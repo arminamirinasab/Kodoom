@@ -4,7 +4,8 @@
   margin: 0;
   border: none;
   font-family: Estedad, sans-serif;
-} body {
+}
+body {
   display: flex;
   height: 100vh;
 }
@@ -42,4 +43,37 @@
 .active#btnDark:hover {
   cursor: pointer;
   font-size: 50px;
+}
+/* Next Vote Button */
+#btnNext {
+  font-size: 25px;
+  position: fixed;
+  top: 90%;
+  left: calc(50% - 75px);
+  width: 150px;
+  height: 60px;
+  cursor: alias;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  mix-blend-mode: difference;
+}
+
+/* Responsive */
+@media screen and (max-width: 1320px) {
+  body {
+    flex-direction: column;
+  }
+  #btnWhite,
+  #btnDark {
+    width: 100% !important;
+    height: 50% !important;
+    font-size: 30px;
+  }
+  .active#btnWhite:hover,
+  .active#btnDark:hover {
+    font-size: 40px;
+  }
+  #btnNext {
+    top: calc(50% - 35px);
+  }
 }

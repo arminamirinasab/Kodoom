@@ -20,12 +20,14 @@
       <h2>لینوکس</h2>
       <span></span>
     </button>
+
+    <button id="btnNext">بعدی</button>
   </body>
 
   <script>
     // Get Number Of Counts From DB
     let whiteCount = 72;
-    let darkCount = 86;
+    let darkCount = 150;
     // DOM Elements
     let btnDark = document.querySelector("#btnDark");
     let btnWhite = document.querySelector("#btnWhite");
@@ -33,8 +35,8 @@
     let submitChoice = () => {
       // Calculate Percentage & All Votes
       let allCount = whiteCount + darkCount;
-      let whitePerc = Math.round(darkCount / (allCount / 100));
-      let DarkPerc = Math.round(whiteCount / (allCount / 100));
+      let whitePerc = Math.round(whiteCount / (allCount / 100));
+      let DarkPerc = Math.round(darkCount / (allCount / 100));
       // Change Width & Hover Effect Class
       btnDark.classList.remove("active");
       btnWhite.classList.remove("active");
