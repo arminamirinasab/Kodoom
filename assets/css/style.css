@@ -67,7 +67,7 @@ body {
   #btnWhite,
   #btnDark {
     width: 100% !important;
-    height: 50% !important;
+    height: 50%;
     font-size: 30px;
   }
   .active#btnWhite:hover,
@@ -76,5 +76,7 @@ body {
   }
   #btnNext {
     top: calc(50% - 35px);
+    transition: 0.3s all;
+    /* right: 0%; */
   }
 }
