@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- <link rel="preconnect" href="//fdn.fontcdn.ir">
+  <link rel="preconnect" href="//fdn.fontcdn.ir">
     <link rel="preconnect" href="//v1.fontapi.ir">
-    <link href="https://v1.fontapi.ir/css/Estedad" rel="stylesheet"> -->
+    <link href="https://v1.fontapi.ir/css/Estedad" rel="stylesheet">
   <title>کدام؟</title>
 </head>
 

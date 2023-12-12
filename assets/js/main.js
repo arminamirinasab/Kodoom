@@ -15,7 +15,7 @@
     }
     xhr.send();
   }
-
+// Send Data To Database
   let saveChoiceInDB = function(id, isItem2) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -23,13 +23,12 @@
         console.log(this.responseText);
       }
     };
-    xhttp.open("POST", "../../api/save.php", true);
+    xhttp.open("POST", "api/save.php", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify({
       id: id,
       isItem2: isItem2
     }));
-
   }
 
   // Define Global Variables & DOM Elements
@@ -96,7 +95,6 @@
       btnWhite.style.height = whitePerc + "%";
       document.querySelector("#btnNext").style.top = "calc(" + whitePerc + "% - 35px)";
     }
-
     // Enter Percentage In Span
     btnDark.children[1].innerHTML = darkPerc + "%";
     btnWhite.children[1].innerHTML = whitePerc + "%";
