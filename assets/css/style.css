@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Estedad;
+  src: url("../font/Estedad-Bold.ttf") format("ttf"),
+  url("../font/Estedad-Bold.woff") format("woff"),
+  url("../font/Estedad-Bold.woff2") format("woff2");
+}
 /* Basic Styles */
 * {
   padding: 0;
@@ -7,7 +13,7 @@
 }
 body {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
 }
 /* Basic Styles For Buttons */
@@ -17,7 +23,8 @@ body {
   height: 100%;
   transition: 0.3s all;
   font-size: 40px;
-  font-weight: bolder;
+  font-weight
+  : bolder;
 }
 /* Custom Styles For Buttons */
 #btnWhite {
